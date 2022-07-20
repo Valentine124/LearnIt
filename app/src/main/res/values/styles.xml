@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textHeadersStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="seeAllTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="exploreCardViewStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">1.5dp</item>
+    </style>
+
+    <style name="courseTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="priceStyle" parent="courseTitleStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

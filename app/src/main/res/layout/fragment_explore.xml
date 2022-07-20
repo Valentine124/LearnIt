@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.explore.ExploreFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/explore_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/exploreLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explore_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textCate"
+                    style="@style/textHeadersStyle"
+                    android:text="@string/text_categories" />
+
+                <TextView
+                    android:id="@+id/textSeeAllCat"
+                    style="@style/seeAllTextStyle"
+                    android:text="@string/see_all_categories" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="0dp"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1.5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnBusiness"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_business"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:id="@+id/btnDesign"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_design"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                        <Button
+                            android:id="@+id/btnDevelopment"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_development"
+                            tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                        <Button
+                            android:id="@+id/btnHealthFit"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_health_fitness"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:id="@+id/btnFinanceAcc"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_finance_accounting" />
+
+                        <Button
+                            android:id="@+id/btnItSoft"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_it_software" />
+
+                        <Button
+                            android:id="@+id/btnMarketing"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_marketing" />
+
+                        <Button
+                            android:id="@+id/btnTeachingAcade"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_teaching_academics" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/textHeadersStyle"
+                    android:text="@string/text_header_development" />
+
+                <TextView
+                    android:id="@+id/seeAllDev"
+                    style="@style/seeAllTextStyle"
+                    android:text="@string/text_see_all" />
+
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.5dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/devCard1"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/devImage1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/devTitle1"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/devTutor1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/devPrice1"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/devCard2"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/devImage2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/devTitle2"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/devTutor2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/devPrice2"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/devCard3"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/devImage3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/devTitle3"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/devTutor3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/devPrice3"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/devCard4"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/devImage4"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/devTitle4"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/devTutor4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/devPrice4"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/devCard5"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/devImage5"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/devTitle5"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/devTutor5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/devPrice5"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/textHeadersStyle"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_header_design" />
+
+                <TextView
+                    android:id="@+id/seeAllDes"
+                    style="@style/seeAllTextStyle"
+                    android:text="@string/text_see_all" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.5dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/desCard1"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/desImage1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/desTitle1"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/desTutor1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:ignore="TextContrastCheck"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/desPrice1"
+                                style="@style/priceStyle"
+                                tools:ignore="TextContrastCheck"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/desCard2"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/desImage2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/desTitle2"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/desTutor2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/desPrice2"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/desCard3"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/desImage3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/desTitle3"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/desTutor3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/desPrice3"
+                                style="@style/priceStyle"
+                                tools:ignore="TooManyViews"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/desCard4"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/desImage4"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/desTitle4"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title"
+                                tools:ignore="TooManyViews" />
+
+                            <TextView
+                                android:id="@+id/desTutor4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:ignore="TooManyViews"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/desPrice4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/desCard5"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/desImage5"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/desTitle5"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/desTutor5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/desPrice5"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textHeadersStyle"
+                    android:text="@string/text_header_it_software" />
+
+                <TextView
+                    android:id="@+id/seeAllIt"
+                    style="@style/seeAllTextStyle"
+                    android:text="@string/text_see_all" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.5dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/itsCard1"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/itsImage1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/itsTitle1"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/itsTutor1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/itsPrice1"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/itsCard2"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/itsImage2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/itsTitle2"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/itsTutor2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/itsPrice2"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/itsCard3"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/itsImage3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/itsTitle3"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/itsTutor3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/itsPrice3"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/itsCard4"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/itsImage4"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/itsTitle4"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/itsTutor4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/itsPrice4"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/itsCard5"
+                        style="@style/exploreCardViewStyle"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardBackgroundColor="@color/learn_blue_200"
+                        app:contentPadding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/itsImage5"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="@string/curse_image"
+                                android:src="@drawable/ic_image_placeholder" />
+
+                            <TextView
+                                android:id="@+id/itsTitle5"
+                                style="@style/courseTitleStyle"
+                                tools:text="Course Title" />
+
+                            <TextView
+                                android:id="@+id/itsTutor5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Tutors" />
+
+                            <TextView
+                                android:id="@+id/itsPrice5"
+                                style="@style/priceStyle"
+                                tools:text="Price" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/noInternetLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="295dp"
+                android:layout_height="289dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/no_internet_image"
+                app:srcCompat="@drawable/ic_no_connection_img_24"
+                tools:ignore="TooDeepLayout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/no_connection"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/btn_retry"
+                android:textColor="#212121"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

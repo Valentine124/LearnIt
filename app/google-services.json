@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811070632693",
+    "project_id": "learn-it-b3383",
+    "storage_bucket": "learn-it-b3383.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811070632693:android:e2fcfb22b7034e39810bbc",
+        "android_client_info": {
+          "package_name": "com.valentine.learnit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811070632693-vkii7siihm85svioclvi4r52vt9asp4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWnp0X7cOTlBIIp6atCYUAGtTi01BBp38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811070632693-vkii7siihm85svioclvi4r52vt9asp4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

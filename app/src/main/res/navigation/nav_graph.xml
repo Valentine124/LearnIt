@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.valentine.learnit.ui.explore.ExploreFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_explore" >
+    </fragment>
+    <fragment
+        android:id="@+id/learningsFragment"
+        android:name="com.valentine.learnit.ui.learning.LearningsFragment"
+        android:label="Learnings"
+        tools:layout="@layout/fragment_learnings" />
+    <fragment
+        android:id="@+id/searches"
+        android:name="com.valentine.learnit.ui.search.SearchesFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_searches" />
+</navigation>

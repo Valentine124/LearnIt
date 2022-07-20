@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">LearnIT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore_title">Explore</string>
+    <string name="learnings_title">Learnings</string>
+    <string name="search_title">Search</string>
+    <string name="string_learnings_title">Learnings</string>
+    <string name="text_categories">Categories</string>
+    <string name="see_all_categories">See All…</string>
+    <string name="text_business">Business</string>
+    <string name="text_design">Design</string>
+    <string name="text_development">Development</string>
+    <string name="text_health_fitness">Health/Fitness</string>
+    <string name="text_finance_accounting">Finance/Accounting</string>
+    <string name="text_it_software">IT/Software</string>
+    <string name="text_marketing">Marketing</string>
+    <string name="text_teaching_academics">Teaching/Academics</string>
+    <string name="text_header_development">Development</string>
+    <string name="text_see_all">See All…</string>
+    <string name="text_header_design">Design</string>
+    <string name="text_header_it_software">IT/Software</string>
+    <string name="design_courses">Design Courses</string>
+    <string name="course_image">course image</string>
+    <string name="teaching_acad">Teaching/Academics Courses</string>
+    <string name="photo_video">Photography/Video Courses</string>
+    <string name="vodafone">Vodafone Courses</string>
+    <string name="personal_dev">Personal Development Courses</string>
+    <string name="office_pro">Office Productivity</string>
+    <string name="music">Music Courses</string>
+    <string name="marketing">Marketing Courses</string>
+    <string name="lifestyle">Lifestyle Courses</string>
+    <string name="it_software">IT/Software Courses</string>
+    <string name="health_fit">Health/Fitness Courses</string>
+    <string name="finance_acc">Finance/Accounting Courses</string>
+    <string name="business">Business Courses</string>
+    <string name="development">Development Courses</string>
+    <string name="curse_image">curse image</string>
+    <string name="text_vodafone">Vodafone</string>
+    <string name="text_photography_video">Photography/Video</string>
+    <string name="text_personal_development">Personal Development</string>
+    <string name="text_office_productivity">Office Productivity</string>
+    <string name="text_music">Music</string>
+    <string name="text_lifestyle">Lifestyle</string>
+    <string name="btn_retry">RETRY</string>
+    <string name="no_internet_image">no internet image</string>
+    <string name="no_connection">NO CONNECTION!</string>
+    <string name="log_in_text">Log in</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="string_or">OR</string>
+    <string name="gmail_icon_content_description">gmail icon</string>
+    <string name="facebook_icon_content_description">facebook icon</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="sign_up_link_text">Sign up</string>
+    <string name="forgot_your_password_link_text">Forgot your password?</string>
+    <string name="button_sign_up">Sign up</string>
+    <string name="sign_up">Sign up</string>
+
+
+    <string name="facebook_app_id" translatable="false">317632890514870</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb317632890514870</string>
+    <string name="facebook_client_token" translatable="false">7a8a150d1660f53c95c1f66be0a218cf</string>
+    <string name="profile_image">profile image</string>
+    <string name="profile_name">Name :</string>
+    <string name="profile_email">Email :</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_to_view_profile">Sign in to view profile.</string>
+    <string name="search_text">Search</string>
+
+    <string name="toggle_theme_pref">recommended_content</string>
+    <string name="reminder_pref">reminder</string>
+    <string name="feedback_pref">feedback</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="welcome_text_para">LeanIt is an android app built on the Udemy Affiliate API to help users get access to Udemy paid and free courses with ease.</string>
+    <string name="welcome_text">WELCOME</string>
+    <string name="learnit_logo_text">learnIt logo</string>
+    <string name="explore_text">Explore</string>
+    <string name="visited_text">Your visited course will appear here when you are signed in</string>
+
+
+</resources>

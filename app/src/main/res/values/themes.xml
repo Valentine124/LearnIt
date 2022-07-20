@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LearnIT" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/learn_blue</item>
+        <item name="colorPrimaryVariant">#51abcb</item>
+        <item name="colorOnPrimary">@color/learn_blue_200</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#be2548</item>
+        <item name="colorSecondaryVariant">#c53b5a</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/learn_blue_200</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/color_background</item>
+    </style>
+</resources>
